@@ -1,0 +1,100 @@
+/* Container */
+.app-container {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+}
+
+/* Button */
+.open-button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+}
+
+.open-button:hover {
+  background-color: #2563eb;
+}
+
+/* Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Dialog */
+.dialog {
+  background: white;
+  color: black;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Close Button */
+.close-button {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #333;
+}
+
+/* Skeleton Loader */
+.skeleton-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skeleton {
+  width: 100%;
+  height: 2.5rem;
+  background-color: #e5e7eb;
+  animation: pulse 1.5s infinite;
+  border-radius: 0.25rem;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Dialog content */
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.dialog-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
